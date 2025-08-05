@@ -45,10 +45,7 @@ Path to the script file
 
 The rest are the actual arguments.
 
-🧪 Example:
-js
-Copy
-Edit
+
 // script.js
 console.log(process.argv);
 
@@ -63,9 +60,38 @@ Output:
 let name = process.argv[2];
 console.log("Hello", name);
 
-
+console.log(process.argv); 
 
 */
 
 
-console.log(process.argv);        
+      
+
+
+// Q1: Write a Node.js program that takes any number of words as command-line arguments and prints each word on a new line with its index.
+
+const userArgs=process.argv.slice(2); // Get command-line arguments excluding the first two
+if (userArgs.length === 0) {
+  console.log("No arguments provided.");
+} else {
+  // Loop through each argument and print with index
+  userArgs.forEach((arg, index) => {
+    console.log(`Arg ${index + 1}: ${arg}`);
+  });
+}
+
+//Write a Node.js program that accepts two numbers from the command line, adds them, and prints the result.
+
+// Use indexing and parseFloat to get numeric values
+let number1 = parseFloat(process.argv[2]);
+let number2 = parseFloat(process.argv[3]);
+
+// Validate the inputs
+if (isNaN(number1) || isNaN(number2)) {
+  console.log("❌ Please provide two valid numbers.");
+} else {
+  let sum = number1 + number2;
+  console.log(`✅ Sum of the two numbers you provided is: ${sum}`);
+}
+
+//  Q3: Write a Node.js program that takes one number from the command line and checks if the number is even or odd.If no number is provided or the input is not a valid number, show an error message.Otherwise, print whether the number is Even or Odd.
