@@ -15,4 +15,6 @@ const num = parseFloat(input);
 if (isNaN(num)) {
   console.log("❌ Please provide a valid number.");
 } else {
-  console.log(`✅ Square of ${num} is ${utilis.square(num)}`);}
+  console.log(`✅ Square of ${num} is ${utilis.square(num)}`);
+}
+
