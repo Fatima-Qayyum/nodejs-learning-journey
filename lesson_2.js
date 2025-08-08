@@ -72,19 +72,21 @@ function subtract(a, b) {
 }
 
 module.exports = { add, subtract };
+
+
 📘 2. string.js – (Inside myUtils/)
-js
-Copy code
+
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 module.exports = { capitalize };
+
+
 📘 3. index.js – (Inside myUtils/)
 This file gathers and exports everything from the folder.
 
-js
-Copy code
+
 const math = require('./math');
 const string = require('./string');
 
@@ -95,8 +97,7 @@ module.exports = {
 ✅ index.js acts as the entry point for the whole folder.
 
 📘 4. main.js – (Outside myUtils/)
-js
-Copy code
+
 const utils = require('./myUtils');
 
 console.log(utils.add(2, 3));           // 5
@@ -104,7 +105,6 @@ console.log(utils.capitalize("fatima")); // Fatima
 🔁 Benefit:
 Now instead of importing each file separately, you can just import the whole folder:
 
-js
-Copy code
+
 const utils = require('./myUtils');
 Let me know if you want this with ES Modules (import/export) or need this turned into a PDF.*/
