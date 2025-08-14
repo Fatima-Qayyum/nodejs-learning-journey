@@ -82,7 +82,7 @@ if (userArgs.length === 0) {
 
 //Write a Node.js program that accepts two numbers from the command line, adds them, and prints the result.
 
-// Use indexing and parseFloat to get numeric values
+/* Use indexing and parseFloat to get numeric values
 let number1 = parseFloat(process.argv[2]);
 let number2 = parseFloat(process.argv[3]);
 
@@ -92,6 +92,75 @@ if (isNaN(number1) || isNaN(number2)) {
 } else {
   let sum = number1 + number2;
   console.log(`✅ Sum of the two numbers you provided is: ${sum}`);
-}
+}*/
 
 //  Q3: Write a Node.js program that takes one number from the command line and checks if the number is even or odd.If no number is provided or the input is not a valid number, show an error message.Otherwise, print whether the number is Even or Odd.
+
+
+
+/*Q1: Write a Node.js program that takes your full name as a command-line argument and prints:
+
+Hello, <name>! Have a great day!
+
+const name =process.argv[2];
+if(!name){
+  console.log('please first provide your name');
+}
+else{
+  console.log(`your name is ${name}`);
+}*/
+
+
+/*Accept a list of numbers from the command line and print only the even numbers.J
+
+let  data=process.argv[2];
+if(data%2==0){
+
+  console.log('congratulations you have entered a even number');
+
+}
+
+else{
+  console.log('you have entered a add number');
+}
+
+
+
+// one more method for above question;
+
+let numbers=process.argv.splice(2).map(Number);
+numbers.forEach(num => {
+    if (!isNaN(num) && num % 2 === 0) {
+        console.log(num);
+    }
+});*/
+
+/*Q3: Take a single command-line argument for temperature in Celsius and convert it to Fahrenheit.
+
+
+const celsius = parseFloat(process.argv[2]);
+if (isNaN(celsius)) {
+    console.log("❌ Please provide a valid temperature.");
+} else {
+    const fahrenheit = (celsius * 9/5) + 32;
+    console.log(`${celsius}°C = ${fahrenheit}°F`);
+}
+*/
+
+
+/*Q5: Accept two numbers and print which one is larger (or if they are equal).*/
+const num1 = parseFloat(process.argv[2]);
+const num2 = parseFloat(process.argv[3]);
+
+if (isNaN(num1) || isNaN(num2)) {
+    console.log("❌ Please provide two valid numbers.");
+} else if (num1 > num2) {
+    console.log(`${num1} is larger.`);
+} else if (num2 > num1) {
+    console.log(`${num2} is larger.`);
+} else {
+    console.log("Both numbers are equal.");
+}
+
+
+
