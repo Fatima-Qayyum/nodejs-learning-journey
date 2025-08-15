@@ -29,8 +29,7 @@ app.get('/user', (req, res) => {
 Sets the HTTP status code before sending a response.
 Usually chained with .send() or .json().
 
-js
-Copy code
+
 app.get('/notfound', (req, res) => {
     res.status(404).send('Page not found');
 });
