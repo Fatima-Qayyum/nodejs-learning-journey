@@ -1,0 +1,41 @@
+{
+  "cats": {
+    "name": "cats",
+    "followers": 25000,
+    "following": 5,
+    "posts": [
+      {
+        "image": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+        "likes": 200,
+        "comments": 17
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYYFhUjvNhBJ9SwQTv8X3PyQVtd-EejwOMQ&s",
+        "likes": 312,
+        "comments": 19
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdTT9eH7KU0t6Xqo8YwG-5gb3gXUzjkGLaw&s",
+        "likes": 1065,
+        "comments": 200
+      }
+    ]
+  },
+  "dogs": {
+    "name": "dogs",
+    "followers": 75000,
+    "following": 2,
+    "posts": [
+      {
+        "image": "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*",
+        "likes": 500,
+        "comments": 34
+      },
+      {
+        "image": "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_640.jpg",
+        "likes": 880,
+        "comments": 62
+      }
+    ]
+  }
+}
