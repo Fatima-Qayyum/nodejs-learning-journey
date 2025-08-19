@@ -8,11 +8,20 @@
 <body>
     <h1>hello how are you all .whats up i hooe you are doing well</h1>
     <button>know more about me</button>
+     <h1>Welcome, <%= username %> !</h1>   <!-- interpolation -->
 
     <button>good job</button>
     <button>you are great
         
     </button>
+
+
+    <% if(age > 18){ %>
+   <p>You are an adult!</p>
+<% } else { %>
+   <p>You are not an adult yet.</p>
+<% } %>
+
     
 </body>
 </html>
